@@ -294,6 +294,74 @@
     .sec { padding: 52px 20px; }
     .sec-title { margin-bottom: 32px; }
   }
+
+  /* ══ CHAMADA FORMAL ══ */
+  .chamada-wrap {
+    background: var(--white);
+    border-top: 1px solid var(--bg3);
+    border-bottom: 3px solid var(--dark);
+    padding: 72px 24px;
+  }
+  .chamada-inner {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .chamada-inner .sec-title { margin-bottom: 28px; }
+  .chamada-text {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.9;
+    margin-bottom: 44px;
+    border-left: 3px solid var(--accent);
+    padding-left: 20px;
+  }
+  .chamada-text strong { color: var(--dark); font-weight: 700; }
+  .chamada-cta {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .chamada-link {
+    display: flex;
+    flex-direction: column;
+    background: var(--dark);
+    color: var(--white);
+    text-decoration: none;
+    padding: 18px 32px;
+    border: 2px solid var(--dark);
+    transition: background .2s, color .2s;
+    flex: 1;
+    min-width: 240px;
+  }
+  .chamada-link:hover {
+    background: transparent;
+    color: var(--dark);
+  }
+  .chamada-link:hover .chamada-link-url { color: var(--accent); }
+  .chamada-link-label {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .chamada-link-url {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    color: var(--accent);
+    font-family: 'Open Sans', sans-serif;
+    transition: color .2s;
+  }
+
+  @media (max-width: 600px) {
+    .chamada-cta { flex-direction: column; }
+    .chamada-link { min-width: unset; width: 100%; }
+    .btn-dark { width: 100%; text-align: center; }
+    .chamada-text { font-size: 14px; padding-left: 14px; }
+  }
+
 </style>
 </head>
 <body>
@@ -536,6 +604,31 @@
         <div class="ben-title">Mix Completo</div>
         <p class="ben-desc">Um único fornecedor para toda a sua necessidade — praticidade e agilidade no pedido.</p>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAMADA FORMAL -->
+<div class="chamada-wrap">
+  <div class="chamada-inner">
+    <div class="sec-label">Acesse agora</div>
+    <h2 class="sec-title">Pronto para Fortalecer<br>o Seu Negócio?</h2>
+    <p class="chamada-text">
+      Prezado Chaveiro Profissional,<br><br>
+      A <strong>ARTHOMAZ</strong> inicia em <strong>16 de Março</strong> o fornecimento exclusivo de produtos para chaveiros da região.
+      Trabalhamos com um mix completo — chaves automotivas, chips, transponders, fechaduras, cadeados, ferragens e máquinas —
+      com preços diferenciados e entrega garantida diretamente para o seu negócio.<br><br>
+      Acesse nossa apresentação completa pelo link abaixo, conheça todas as categorias disponíveis e entre em contato para
+      negociar condições especiais de fornecimento.
+    </p>
+    <div class="chamada-cta">
+      <a href="https://tangovpn-cell.github.io/chaveiros/" target="_blank" class="chamada-link">
+        <span class="chamada-link-label">Acessar Apresentação Completa</span>
+        <span class="chamada-link-url">tangovpn-cell.github.io/chaveiros</span>
+      </a>
+      <a href="https://api.whatsapp.com/send?phone=554891353369&text=Olá!%20Vi%20a%20apresentação%20da%20ARTHOMAZ%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20para%20chaveiros." target="_blank" class="btn-dark" style="margin-top:0;">
+        💬 Falar no WhatsApp
+      </a>
     </div>
   </div>
 </div>
